@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office View of the website</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">
+            </a>
+        </div>
+        <nav class="desktop-main-menu">
+            <ul>
+                <li>date</li>
+                <li>time</li>
+                <li>search</li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <aside class="sidebar">
+            <h2 class="line-names">Production lines</h2>
+            <div class="desktop-sidebar-menu-bg">
+                <nav class="desktop-sidebar-menu">
+                        <ul>
+                            <li id="hot-drink" onclick=""><a href="#">Coffee</a></li>
+                            <li id="icetea" onclick=""><a href="#">Icetea</a></li>
+                            <li id="apple-juice" onclick=""><a href="#">Apple Juice</a></li>
+                            <li id="blueberry-drink" onclick=""><a href="#">Blueberry Drink</a></li>
+                        </ul>
+                </nav>
+                <h3 class="archive-name"><a href="#">Archives</a></h3>
+            </div>
+        </aside>
+    </div>
+    <div class="website-background">
+        <div class="show-orders">
+            <div class="btn">Edit</div>
+            <div class="btn">Save</div>
+            <div class="btn">Send</div>
+            <div class="container">
+                <div class="draggable" draggable="true">Sales</div>
+                <div class="draggable" draggable="true">New List</div>
+                <div class="draggable" draggable="true">In production</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

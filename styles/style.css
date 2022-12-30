@@ -1,0 +1,142 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #fff;
+    color: #000;
+}
+
+
+
+.website-background {
+    margin-top: 1em;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(orange, yellow);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header/Navbar */
+
+.main-header {
+    background-color: green;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    height: 100px;
+    padding: 0 30px;
+}
+
+/* Desktop Menu */
+
+.desktop-main-menu {
+    margin-right: 50px;
+}
+
+.desktop-main-menu ul {
+    display: flex;   
+}
+
+.desktop-main-menu ul li {
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 2px;
+
+}
+
+/* Desktop Side Menu */
+
+.sidebar {
+    position: absolute;
+    background-color: transparent;
+    height: 100%;
+
+
+
+}
+
+.desktop-sidebar-menu {
+    position: relative;
+    display: flex;
+    margin-left: 0px;
+    align-self: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 10;
+
+}
+
+/* Sidebar-menu text */
+
+.desktop-sidebar-menu ul li:hover {
+    flex-grow: 1.5;
+    transform: scaleX(2);
+    transform-origin: left;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    animation: fadeIn 2s linear forwards;
+
+}
+
+  .line-names {
+    color: green;
+    text-align: center;
+
+  }
+
+  /* Lists on the center */
+
+  .show-orders {
+    left: 25%;
+    position: relative;
+    align-self: right;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+  }
+
+  .show-orders .draggable {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    cursor: move;
+  }
+
+  .draggable .dragging {
+    opacity: .5;
+  }
+
+  .show-orders .btn {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
